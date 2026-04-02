@@ -1,0 +1,114 @@
+package array1;
+
+
+import java.util.Scanner;
+public class Test {
+	   public static void main(String[] args) {
+
+	        Scanner sc = new Scanner(System.in);
+
+	        Employee employee[] = new Employee[3];
+
+	        // Input
+	        for (int i = 0; i < employee.length; i++) {
+	        	
+	        	
+	        	Employee e = new Employee();
+	        	
+	        	
+	        	System.out.println("Enter id");
+	    		e.setId(sc.nextInt());
+	    		sc.nextLine();
+	    		
+	    		System.out.println("Enter name");
+	    		e.setName(sc.nextLine());
+	    		
+	    		System.out.println("Enter company");
+	    		e.setCompany(sc.nextLine());
+	    		
+	    	 	System.out.println("Enter salary");
+	    		e.setSalary(sc.nextDouble());
+	    		sc.nextLine();
+	    		
+	    		System.out.println("Enter department");
+	    		e.setDepartment(sc.nextLine());
+	    		
+	    		System.out.println("Enter post");
+	    		e.setPost(sc.nextLine());
+	    		
+	    		System.out.println("Enter city");
+	    		e.setCity(sc.nextLine());
+	    		
+	    		employee[i] = e;
+	    		
+	        }
+	          
+	        
+	     // a) Total salary
+	        double total = 0;
+	        for (int i = 0; i < employee.length; i++) {
+	            total += employee[i].getSalary();
+	        }
+	        System.out.println("Total Salary = " + total);
+
+	        // b) IT employees
+	        System.out.println("\nIT Employees:");
+	        for (int i = 0; i < employee.length; i++) {
+	            if (employee[i].getDepartment().equalsIgnoreCase("IT")) {
+	                System.out.println(employee[i].getName());
+	            }
+	        }
+
+	        // c) Count Admin
+	        int count = 0;
+	        for (int i = 0; i < employee.length; i++) {
+	            if (employee[i].getDepartment().equalsIgnoreCase("Admin")) {
+	                count++;
+	            }
+	        }
+	        System.out.println("Admin Count = " + count);
+
+	        // d) Particular city
+	        System.out.print("\nEnter city: ");
+	        String city = sc.nextLine();
+
+	        int cityCount = 0;
+	        for (int i = 0; i < employee.length; i++) {
+	            if (employee[i].getCity().equalsIgnoreCase(city)) {
+	                System.out.println(employee[i].getName());
+	                cityCount++;
+	            }
+	        }
+	        System.out.println("Total = " + cityCount);
+
+	        // e) Department salary
+	        System.out.print("\nEnter department: ");
+	        String dept = sc.nextLine();
+
+	        double deptTotal = 0;
+	        for (int i = 0; i < employee.length; i++) {
+	            if (employee[i].getDepartment().equalsIgnoreCase(dept)) {
+	                deptTotal += employee[i].getSalary();
+	            }
+	        }
+	        System.out.println("Dept Salary = " + deptTotal);
+
+	        
+	        //highest and lowest salary
+	        double max = Double.MIN_VALUE;
+	        double min = Double.MAX_VALUE;
+
+	        for (Employee e : employee) {
+	            if (e != null) {   // null safety
+	                double salary = e.getSalary();
+
+	                max = Math.max(max, salary);
+	                min = Math.min(min, salary);
+	            }
+	        }
+
+	        System.out.println("Max Salary = " + max);
+	        System.out.println("Min Salary = " + min);
+	   }
+
+}

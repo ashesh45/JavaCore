@@ -1,0 +1,19 @@
+package InheritancePractice;
+
+public class Main {
+	
+	public static void main(String[] args)
+	{
+		
+		Parent p = new Parent();
+        p.showParent();
+
+        // 2 - method of child class by object of child class
+        Child c = new Child();
+        c.showChild();
+
+        // 3 - method of parent class by object of child class
+        c.showParent();  // inherited method
+	}
+
+}

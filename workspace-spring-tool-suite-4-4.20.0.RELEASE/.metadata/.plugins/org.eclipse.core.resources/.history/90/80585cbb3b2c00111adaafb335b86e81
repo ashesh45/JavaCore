@@ -1,0 +1,12 @@
+package InheritancePractice;
+
+public class Parent {
+	
+	void print()
+	{
+		
+		System.out.println("This is a parent class");   
+		
+	}
+
+}

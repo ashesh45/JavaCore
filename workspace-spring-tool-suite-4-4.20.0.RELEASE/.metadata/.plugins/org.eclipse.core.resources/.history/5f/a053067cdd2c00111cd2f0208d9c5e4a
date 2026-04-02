@@ -1,0 +1,40 @@
+package arrayofobject;
+
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		//store and print data of 5 products
+		
+		//create array
+		Product products[] = new Product[9];
+		
+		//write data in array
+		
+		Scanner sc= new Scanner(System.in);
+		
+		for(int i=0; i<products.length; i++) {
+				
+				
+	   Product p= new Product();
+		p.setId(0);
+		p.setName("MOBILE");
+		p.setPrice(9000);
+		p.setCompany("facebook");
+		
+		products[i]=p;
+		}
+				
+		//read data from array
+		
+		int tp=0;
+		for(Product pd: products) {
+			System.out.println(pd);
+			tp=tp+pd.getPrice();
+			
+		}	
+		
+	}
+
+	

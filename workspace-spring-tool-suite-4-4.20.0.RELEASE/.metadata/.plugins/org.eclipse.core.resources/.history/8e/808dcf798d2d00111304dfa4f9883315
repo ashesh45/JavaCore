@@ -1,0 +1,47 @@
+package array1;
+
+
+import java.util.Scanner;
+public class Test {
+	   public static void main(String[] args) {
+
+	        Scanner sc = new Scanner(System.in);
+
+	        Employee employee[] = new Employee[10];
+
+	        // Input
+	        for (int i = 0; i < employee.length; i++) {
+	        	
+	        	
+	        	Employee e = new Employee();
+	        	
+	        	
+	        	System.out.println("Enter id");
+	    		e.setId(sc.nextInt());
+	    		sc.nextLine();
+	    		
+	    		System.out.println("Enter name");
+	    		e.setName(sc.nextLine());
+	    		
+	    		System.out.println("Enter company");
+	    		e.setCompany(sc.nextLine());
+	    		
+	    	 	System.out.println("Enter salary");
+	    		e.setSalary(sc.nextInt());
+	    		sc.nextLine();
+	    		
+	    		System.out.println("Enter department");
+	    		e.setDepartment(sc.nextLine());
+	    		
+	    		System.out.println("Enter post");
+	    		e.setPost(sc.nextLine());
+	    		
+	    		System.out.println("Enter city");
+	    		e.setCity(sc.nextLine());
+	    		
+	        	
+	    		
+	        }
+	          
+	  
+}
