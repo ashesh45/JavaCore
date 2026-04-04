@@ -1,0 +1,9 @@
+package Abstraction;
+
+public interface UserService extends CommonSerice {
+	
+		void addUser();
+		void deleteUser();
+
+		
+}

@@ -1,0 +1,8 @@
+package Abstraction;
+
+public class UserService extends CommonService,List<String> {
+	
+		void addUser();
+		void deleteUser();
+
+}

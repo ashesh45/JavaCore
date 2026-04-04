@@ -38,4 +38,5 @@
     <fullyQualifiedTypeName name="com.blog.example.payloads.PostResponse"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Sort"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

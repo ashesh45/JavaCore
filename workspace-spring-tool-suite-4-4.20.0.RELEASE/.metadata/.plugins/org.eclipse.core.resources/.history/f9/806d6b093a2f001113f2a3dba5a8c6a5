@@ -1,0 +1,10 @@
+package Abstraction;
+
+public class UserService implements Service,CommonSerice {
+	
+		void addUser();
+		void deleteUser();
+
+		
+		
+}

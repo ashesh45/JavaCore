@@ -1,0 +1,21 @@
+package Abstraction;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+		
+		CentralBank bank = new NabilBank();
+		
+		bank.getBankName();
+		bank.getInterestRate();
+		
+		UserService us = new UserServiceImpl();
+		us.addUser();
+		us.deleteUser();
+		
+		
+	}
+	}
+
+

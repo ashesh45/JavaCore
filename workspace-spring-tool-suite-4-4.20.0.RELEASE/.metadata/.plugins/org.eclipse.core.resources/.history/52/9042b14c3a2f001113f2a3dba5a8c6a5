@@ -1,0 +1,28 @@
+package Abstraction;
+
+public class UserServiceImpl implements UserService,CommonServie {
+	
+	@Override
+	public void adduser()
+	{
+		System.out.print("----add success");
+		
+	}
+
+	@Override
+	public void deleteUser()
+	{
+		System.out.print("----deleted success");
+		
+	}
+
+	@Override
+	public void addUser() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+
+}
