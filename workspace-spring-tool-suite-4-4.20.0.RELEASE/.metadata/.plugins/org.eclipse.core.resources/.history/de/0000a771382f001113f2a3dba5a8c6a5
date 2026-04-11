@@ -1,8 +1,0 @@
-package Abstraction;
-
-public class UserService {
-	
-		void addUser();
-		void deleteUser();
-
-}

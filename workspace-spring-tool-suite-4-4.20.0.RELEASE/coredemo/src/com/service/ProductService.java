@@ -7,7 +7,7 @@ import com.model.Product;
 public interface ProductService {
 	
 	void addProduct(Product p);
-	void deleteProduct(int index);
+	void deleteProduct(int id);
 	List<Product> getAllProducts();
 
 }

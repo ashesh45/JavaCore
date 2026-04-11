@@ -1,7 +1,0 @@
-package Abstraction;
-
-public class NabilBank extends CentralBank {
-	
-	
-
-}

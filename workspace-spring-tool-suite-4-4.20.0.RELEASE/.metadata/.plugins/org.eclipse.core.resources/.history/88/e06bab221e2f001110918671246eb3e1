@@ -1,7 +1,0 @@
-package aggrgiation;
-
-public class address {
-	private String city;
-	private String state;
-
-}

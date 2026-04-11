@@ -15,9 +15,9 @@ public class ProductView {
 
     public static void main(String[] args) {
     	 
-        add();
-        getAll();
-        delete();
+       // add();
+       getAll();
+        //delete();
     }
  
     // add product
