@@ -9,7 +9,7 @@ import com.service.ProductServiceImpl;
 
 public class ProductView {
 	
-	static ProductService service = new ProductServiceImpl(); // ✅ GLOBAL
+	static ProductService service = new ProductServiceImpl(); 
     static Scanner sc = new Scanner(System.in);
     
 
