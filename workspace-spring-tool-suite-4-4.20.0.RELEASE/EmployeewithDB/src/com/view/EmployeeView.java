@@ -53,7 +53,7 @@ public class EmployeeView {
     // get all employees
     static void getAll() {
 
-        List<Employee> list = service.getAllEmployees();
+        List <Employee> list = service.getAllEmployees();
         System.out.println(list);
     }
 
