@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<bean class = "com.DI.Customer" id="cust">
+    <constructor-arg value="83"/>
+    <constructor-arg value="Ashesh"/>
+     <constructor-arg value="998773733"/>
+      <constructor-arg value="21"/>
+    </bean>
+    
+    <bean class = "com.DI.Bike " id="bk">
+       <property name = "color" value="Blue"/>
+        <property name = "company" value="yamaha"/>
+         <property name = "price" value="150000"/>
+    </bean>
+    
+    
+    <bean class = "com.DI.Employee " id="emp">
+       <property name = "name" value="ajay"/>
+        <property name = "id" value="8"/>
+         <property name = "phone" value="98776772"/>
+            <property name = "bike" ref="bk"/>
+      
+    </bean>
+
+
+</beans>

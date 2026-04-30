@@ -26,12 +26,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="bway.ORMDemo"/>
 			<item value="bway.mavendemo_DEMO"/>
 		</list>
 		<list key="groupId">
 			<item value="bway"/>
 		</list>
 		<list key="artifactId">
+			<item value="ORMDemo"/>
 			<item value="mavendemo"/>
 		</list>
 		<list key="projectNameTemplate">

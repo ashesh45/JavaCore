@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <h2>Sign Up Form</h2>
+
+    <form action="/signup" method="post">
+		
+   <p style="color:red"> [[${msg}]]</p>
+
+        <label>Name:</label><br>
+        <input type="text" name="name"  ><br><br>
+
+        <label>Email:</label><br>
+        <input type="text" name="email"  ><br><br>
+
+        <label>Username:</label><br>
+        <input type="text" name="username" ><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" ><br><br>
+
+        
+
+        <input type="submit" value="Register">
+    
+
+    </form>
+
+</body>
+</html>
